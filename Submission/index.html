@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet" />
+    <title>Bookshelf</title>
+</head>
+
+<body>
+    <header>
+        <h1>Bookshelf Apps</h1>
+    </header>
+    <main>
+        <section class="input-form">
+            <div class="container">
+                <form id="inputBook">
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="judul">Judul</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="judul" placeholder="Masukkan Judul..." />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="penulis">Penulis</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="penulis" placeholder="Masukkan Penulis Buku..." />
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="tahun">Tahun Terbit</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="number" id="tahun" placeholder="Masukkan Tahun Terbit..." value="2022" min="1900" max="2022" required />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="selesai" class="selesai-dibaca">Selesai Dibaca</label
+                >
+              </div>
+              <div class="checkbox">
+                <input type="checkbox" id="selesai" />
+              </div>
+            </div>
+            <div class="submit-button">
+              <button id="bookSubmit" type="submit" class="btn-green">
+                Tambahkan Buku Ke Rak
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="search" id="search">
+        <div class="container">
+          <form id="searchBook">
+            <h2>Cari Buku di dalam Rak</h2>
+            <input
+              type="text"
+              id="searchTitle"
+              name="search"
+              placeholder="Cari judul bukumu..."
+            />
+            <button id="searchSubmit" type="submit">Cari</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="belum-dibaca">
+        <div class="container">
+          <h2>Belum selesai dibaca</h2>
+          <div id="belumDibaca"></div>
+        </div>
+      </section>
+
+      <section class="sudah-dibaca">
+        <div class="container">
+          <h2>Selesai dibaca</h2>
+          <div id="selesaiDibaca"></div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; Dicoding 2022 - Tegar Alfalakh Thamrin</p>
+    </footer>
+    <script src="./assets/script.js"></script>
+  </body>
+</html>
